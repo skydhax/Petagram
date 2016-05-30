@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="hola_mundo">Hola mundo!</string>
+    <string name="texto_boton_raised">Este es un RaisedButton!</string>
+    <string name="fab_message">Favorito! :)</string>
+    <string name="snackbar_message">Acción</string>
+    
+    
+    <string-array name="planetas">
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+    </string-array>
+
+    <string name="titulo_card">Android 5.1.1</string>
+    <string name="descripcion_card">Esta es la version en la que se incluyó Material Design</string>
+
+    <string name="mAbout">About</string>
+    <string name="mSettings">Settings</string>
+    <string name="mFavorites">Favorites</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin10"
+    android:layout_margin="@dimen/margin15"
+    card_view:cardCornerRadius="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10"
+        >
+
+        <ImageView
+            android:id="@+id/imgMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tiger1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnRanking"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bone1"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:id="@+id/tvNombreCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Tiger 1"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="right"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tvRankingCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:textSize="25dp" />
+
+
+            <ImageView
+                android:id="@+id/imgRankingActual"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/bone2"
+                android:layout_gravity="right"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
