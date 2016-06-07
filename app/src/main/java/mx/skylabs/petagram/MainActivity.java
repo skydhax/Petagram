@@ -3,6 +3,9 @@ package mx.skylabs.petagram;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,9 +24,12 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
 
-    ArrayList<Mascota> mascotas;
-    private RecyclerView listaMascotas;
+
+
 
 
     @Override
@@ -31,37 +37,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        /*
         Toolbar miActionBar = (Toolbar)findViewById(R.id.miActionBar);
         setSupportActionBar(miActionBar);
+        */
 
-        listaMascotas = (RecyclerView)findViewById(R.id.rvMascotas);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        tabLayout = (TabLayout)findViewById(R.id.tabLayout);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        setUpViewPager();
 
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
 
-        listaMascotas.setLayoutManager(llm);
-        inicializarListaMascotas();
-        inicializarAdaptador();
+        if(toolbar != null) {
+            setSupportActionBar(toolbar);
+        }
 
     }
 
-    public void inicializarListaMascotas(){
-        mascotas = new ArrayList<Mascota>();
 
-        mascotas.add(new Mascota("Bengalito",0,R.drawable.tiger1));
-        mascotas.add(new Mascota("Milky",0,R.drawable.cat1));
-        mascotas.add(new Mascota("Scar",0,R.drawable.tiger2));
-        mascotas.add(new Mascota("Johnny",0,R.drawable.cat2));
-        mascotas.add(new Mascota("Grumpy",0,R.drawable.grumpycat));
-    }
-
-
-
-    public void inicializarAdaptador(){
-        MascotaAdaptador adaptador = new MascotaAdaptador(mascotas,this);
-        listaMascotas.setAdapter(adaptador);
-    }
 
 
 
@@ -79,16 +72,24 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()){
             case R.id.mAbout:
-                Toast.makeText(this, "Daniel Reyes Sánchez", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Daniel Reyes Sánchez", Toast.LENGTH_SHORT).show();
+                Intent intentAbout = new Intent(this,About.class);
+                startActivity(intentAbout);
                 break;
 
-            case R.id.mSettings:
-                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+            case R.id.mContact:
+                Toast.makeText(this, "Contacto", Toast.LENGTH_SHORT).show();
+
+                Intent intentContacto = new Intent(this,Contacto.class);
+                startActivity(intentContacto);
+
                 break;
 
             case R.id.mFavorites:
                 Toast.makeText(this, "Favorites", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, ListadoMascotas.class);
+
+                /*
 
                 int noMascotas = 0;
                 for(int i = 0; i< 5; i++){
@@ -101,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("noMascotas",noMascotas);
 
 
+
+                */
                 startActivity(intent);
                 break;
         }
@@ -108,6 +111,20 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private ArrayList<Fragment> agregarFragments(){
+        ArrayList<Fragment> fragments = new ArrayList<>();
+
+        fragments.add(new RecyclerViewFragment());
+        fragments.add(new PerfilMascotaFragment());
+
+        return fragments;
+    }
+
+    private void setUpViewPager(){
+        viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), agregarFragments()));
+        tabLayout.setupWithViewPager(viewPager);
+
+    }
 
 
     /*

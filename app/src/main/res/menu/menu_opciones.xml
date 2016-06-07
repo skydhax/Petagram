@@ -9,8 +9,8 @@
         android:orderInCategory="100"></item>
 
     <item
-        android:id="@+id/mSettings"
-        android:title="@string/mSettings"
+        android:id="@+id/mContact"
+        android:title="@string/mContact"
         android:orderInCategory="101"></item>
 
     <item
