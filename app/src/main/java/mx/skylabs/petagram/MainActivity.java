@@ -1,26 +1,21 @@
 package mx.skylabs.petagram;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import mx.skylabs.petagram.adapters.PageAdapter;
+import mx.skylabs.petagram.fragments.PerfilMascotaFragment;
+import mx.skylabs.petagram.fragments.RecyclerViewFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -89,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Favorites", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, ListadoMascotas.class);
 
-                /*
 
+                /*
                 int noMascotas = 0;
                 for(int i = 0; i< 5; i++){
                     if(mascotas.get(i).getRanking() == 5){
@@ -100,10 +95,11 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 intent.putExtra("noMascotas",noMascotas);
-
-
-
                 */
+
+
+
+
                 startActivity(intent);
                 break;
         }
