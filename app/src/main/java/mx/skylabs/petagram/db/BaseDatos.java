@@ -63,17 +63,10 @@ public class BaseDatos extends SQLiteOpenHelper {
         while( registros.moveToNext() ){
             Mascota mascotaAcual = new Mascota();
 
-            mascotaAcual.setIdMascota(registros.getInt(0));
-            //Log.e("AQUI", String.valueOf(registros.getInt(0)));
-
-            mascotaAcual.setNombre(registros.getString(1));
-            //Log.e("AQUI", registros.getString(1));
-
-            mascotaAcual.setRanking(registros.getInt(2));
-            //Log.e("AQUI", String.valueOf(registros.getInt(2)));
-
-            mascotaAcual.setFoto(registros.getInt(3));
-            //Log.e("AQUI", String.valueOf(registros.getInt(3)));
+            //mascotaAcual.setIdMascota(registros.getInt(0));
+            //mascotaAcual.setNombre(registros.getString(1));
+            //mascotaAcual.setRanking(registros.getInt(2));
+            //mascotaAcual.setFoto(registros.getInt(3));
 
             mascotas.add(mascotaAcual);
         }
@@ -101,7 +94,7 @@ public class BaseDatos extends SQLiteOpenHelper {
     }
     */
 
-    public void ponerRankingMascota(ContentValues contentValues, int idMascota){
+    public void ponerRankingMascota(ContentValues contentValues, String idMascota){
         SQLiteDatabase db = this.getWritableDatabase();
 
         db.update("mascota",contentValues,"idMascota="+idMascota,null);
@@ -110,7 +103,7 @@ public class BaseDatos extends SQLiteOpenHelper {
     public int obtenerRankingDeMascota(Mascota mascota){
         int ranking = 0;
 
-        String query = "SELECT ranking FROM mascota WHERE idMascota="+ mascota.getIdMascota();
+        String query = "SELECT ranking FROM mascota WHERE idMascota="+ 1; //mascota.getIdMascota();
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor registros = db.rawQuery(query,null);
 
@@ -136,12 +129,18 @@ public class BaseDatos extends SQLiteOpenHelper {
         while( registros.moveToNext() ){
             Mascota mascotaAcual = new Mascota();
 
-            mascotaAcual.setIdMascota(registros.getInt(0));
-            mascotaAcual.setNombre(registros.getString(1));
+            //mascotaAcual.setIdMascota(registros.getInt(0));
+            //mascotaAcual.setNombre(registros.getString(1));
             mascotaAcual.setRanking(registros.getInt(2));
-            mascotaAcual.setFoto(registros.getInt(3));
+            //mascotaAcual.setFoto(registros.getInt(3));
 
-            /*
+
+
+
+
+            /* anteriormente deshechado
+
+
             String queryRanking = "SELECT COUNT(ranking) as rank FROM ranking WHERE idMascota = " + mascotaAcual.getIdMascota();
             Cursor registrosRanking = db.rawQuery(queryRanking, null);
             if( registrosRanking.moveToNext() ){

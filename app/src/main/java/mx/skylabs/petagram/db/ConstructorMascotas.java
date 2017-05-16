@@ -112,7 +112,7 @@ public class ConstructorMascotas {
         ContentValues contentValues = new ContentValues();
         contentValues.put("ranking",nuevoRanking);
 
-        db.ponerRankingMascota(contentValues,mascota.getIdMascota());
+        db.ponerRankingMascota(contentValues,mascota.getId());
     }
 
 

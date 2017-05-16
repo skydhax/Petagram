@@ -10,6 +10,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 import mx.skylabs.petagram.db.ConstructorMascotas;
@@ -29,19 +32,30 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     @Override
     public MascotaViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_mascota, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_grid_mascota, parent, false);
         return new MascotaViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(final MascotaViewHolder mascotaViewHolder, int position) {
         final Mascota mascota = mascotas.get(position);
+        Picasso.with(activity)
+                .load(mascota.getPhotoUrl())
+                .placeholder(R.drawable.tiger1)
+                .into(mascotaViewHolder.imgMascota);
 
-        mascotaViewHolder.imgMascota.setImageResource(mascota.getFoto());
-        mascotaViewHolder.tvNombreCardView.setText(mascota.getNombre());
+        //mascotaViewHolder.tvNombreCardView.setText(mascota.getNombre());
+        //mascotaViewHolder.imgMascota.setImageResource(mascota.getFoto());
         mascotaViewHolder.tvRanking.setText( String.valueOf(mascota.getRanking()) );
-        //mascotaViewHolder.tvRankingCardView.setText( String.valueOf(mascota.getRanking()) );
 
+
+
+
+
+        // Deshechado
+
+        //mascotaViewHolder.tvRankingCardView.setText( String.valueOf(mascota.getRanking()) );
+        /*
         mascotaViewHolder.btnRanking.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -57,7 +71,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
             }
         });
-
+        */
     }
 
     @Override
@@ -69,18 +83,18 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     public static class MascotaViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView imgMascota;
-        private ImageButton btnRanking;
-        private TextView tvNombreCardView;
-        private ImageView imgRankingActual;
         private TextView tvRanking;
+        private ImageView imgRankingActual;
+        //private ImageButton btnRanking;
+        //private TextView tvNombreCardView;
         //private TextView tvRankingCardView;
 
         public MascotaViewHolder(View itemView){
             super(itemView);
 
-            btnRanking = (ImageButton) itemView.findViewById(R.id.btnRanking);
+            //btnRanking = (ImageButton) itemView.findViewById(R.id.btnRanking);
             imgMascota = (ImageView) itemView.findViewById(R.id.imgMascota);
-            tvNombreCardView = (TextView) itemView.findViewById(R.id.tvNombreCardView);
+            //tvNombreCardView = (TextView) itemView.findViewById(R.id.tvNombreCardView);
             //tvRankingCardView = (TextView) itemView.findViewById(R.id.tvRankingCardView);
             imgRankingActual = (ImageView) itemView.findViewById(R.id.imgRankingActual);
             tvRanking = (TextView) itemView.findViewById(R.id.tvRanking);

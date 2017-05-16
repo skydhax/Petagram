@@ -6,5 +6,7 @@ package mx.skylabs.petagram.presentador;
 public interface IRecyclerViewFragmentPresenter {
 
     public void obtenerMascotasBaseDatos();
+    void getRecentMedia();
+
     public void mostrarMascotasRV();
 }

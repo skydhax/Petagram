@@ -12,6 +12,7 @@ public interface IRecyclerViewFragmentView {
 
 
     public void generarLinearLayoutVertical();
+    public void generarGridLayout();
     public MascotaAdaptador crearAdaptador(ArrayList<Mascota> mascotas);
     public void inicializarAdaptadorRV(MascotaAdaptador adaptador);
 }

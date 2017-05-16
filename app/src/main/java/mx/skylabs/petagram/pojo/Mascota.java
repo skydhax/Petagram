@@ -5,36 +5,45 @@ package mx.skylabs.petagram.pojo;
  */
 public class Mascota {
 
-    private int idMascota;
-    private String nombre;
+    private String id;
+    private String full_name;
+    private String photo_url;
     private int ranking;
-    private int foto;
 
 
-    public Mascota(String nombre, int ranking, int foto){
-        this.nombre = nombre;
+    public Mascota(String id, String full_name, String photo_url,  int ranking, int foto){
+        this.id = id;
+        this.full_name = full_name;
+        this.photo_url = photo_url;
         this.ranking = ranking;
-        this.foto = foto;
     }
 
     public Mascota(){
 
     }
 
-    public int getFoto() {
-        return foto;
+    public String getId() {
+        return id;
     }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getFullName() {
+        return full_name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setFullName(String full_name) {
+        this.full_name = full_name;
+    }
+
+    public String getPhotoUrl() {
+        return photo_url;
+    }
+
+    public void setPhotoUrl(String photo_url) {
+        this.photo_url = photo_url;
     }
 
     public int getRanking() {
@@ -44,13 +53,4 @@ public class Mascota {
     public void setRanking(int ranking) {
         this.ranking = ranking;
     }
-
-    public int getIdMascota() {
-        return idMascota;
-    }
-
-    public void setIdMascota(int idMascota) {
-        this.idMascota = idMascota;
-    }
-
 }

@@ -48,11 +48,13 @@ public class PerfilMascotaFragment extends Fragment {
     public void inicializarListaMascotas(){
         fotosMascota = new ArrayList<>();
 
+        /*
         fotosMascota.add(new Mascota("Bengalito",0,R.drawable.tiger1));
         fotosMascota.add(new Mascota("Milky",0,R.drawable.cat1));
         fotosMascota.add(new Mascota("Scar",0,R.drawable.tiger2));
         fotosMascota.add(new Mascota("Johnny",0,R.drawable.cat2));
         fotosMascota.add(new Mascota("Grumpy",0,R.drawable.grumpycat));
+        */
     }
 
 
