@@ -29,12 +29,15 @@ public class RecyclerViewFragmentPresenter implements IRecyclerViewFragmentPrese
     private IRecyclerViewFragmentView iRecyclerViewFragmentView;
     private ConstructorMascotas constructorMascotas;
     private ArrayList<Mascota> mascotas;
+    private ArrayList<String> followersId;
 
     public RecyclerViewFragmentPresenter(IRecyclerViewFragmentView iRecyclerViewFragmentView, Context context){
         this.iRecyclerViewFragmentView = iRecyclerViewFragmentView;
         this.context = context;
         //obtenerMascotasBaseDatos();
         getRecentMedia();
+        //getRecentMediaFromNiebla();
+        //getFollowersId();
     }
 
     @Override
@@ -74,4 +77,76 @@ public class RecyclerViewFragmentPresenter implements IRecyclerViewFragmentPrese
             }
         });
     }
+
+
+    @Override
+    public void getRecentMediaFromNiebla() {
+        RestAPIAdapter restAPIAdapter = new RestAPIAdapter();
+        Gson gsonMediaRecent = restAPIAdapter.construyeGsonDeserializadorParaMediaRecent();
+        EndpointsApi endpointsApi = restAPIAdapter.establecerConexionRestApiInstagram(gsonMediaRecent);
+        Call<MascotaResponse> mascotaResponseCall = endpointsApi.getRecentMediaFromNiebla();
+        mascotaResponseCall.enqueue(new Callback<MascotaResponse>() {
+            @Override
+            public void onResponse(Call<MascotaResponse> call, Response<MascotaResponse> response) {
+                MascotaResponse mascotaResponse = response.body();
+
+                mascotas = mascotaResponse.getMascotas();
+                mostrarMascotasRV();
+            }
+
+            @Override
+            public void onFailure(Call<MascotaResponse> call, Throwable t) {
+                Toast.makeText(context, "Error en la conexión al servidor, intente más tarde", Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    @Override
+    public void getFollowersId() {
+        RestAPIAdapter restAPIAdapter = new RestAPIAdapter();
+        Gson gsonFollowersId = restAPIAdapter.construyendoGsonDeserializadorParaFollowers();
+        EndpointsApi endpointsApi = restAPIAdapter.establecerConexionRestApiInstagram(gsonFollowersId);
+        Call<MascotaResponse> followersResponseCall = endpointsApi.getFollowersId();
+        followersResponseCall.enqueue(new Callback<MascotaResponse>() {
+            @Override
+            public void onResponse(Call<MascotaResponse> call, Response<MascotaResponse> response) {
+                MascotaResponse mascotaResponse = response.body();
+                followersId = mascotaResponse.getFollowersId();
+                for (int i = 0; i < followersId.size(); i++) {
+                    String id = followersId.get(i);
+                    getRecentMediaFrom(id);
+                }
+                mostrarMascotasRV();
+            }
+
+            @Override
+            public void onFailure(Call<MascotaResponse> call, Throwable t) {
+                Toast.makeText(context, "Error en la conexión al servidor, intente más tarde", Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+
+
+    private void getRecentMediaFrom(String userId) {
+        RestAPIAdapter restAPIAdapter = new RestAPIAdapter();
+        Gson gsonMediaRecent = restAPIAdapter.construyeGsonDeserializadorParaMediaRecent();
+        EndpointsApi endpointsApi = restAPIAdapter.establecerConexionRestApiInstagram(gsonMediaRecent);
+        Call<MascotaResponse> mascotaResponseCall = endpointsApi.getRecentMediaFrom(userId);
+        mascotaResponseCall.enqueue(new Callback<MascotaResponse>() {
+            @Override
+            public void onResponse(Call<MascotaResponse> call, Response<MascotaResponse> response) {
+                MascotaResponse mascotaResponse = response.body();
+                ArrayList<Mascota> m = new ArrayList<Mascota>();
+                m = mascotaResponse.getMascotas();
+                mascotas.addAll(m);
+            }
+
+            @Override
+            public void onFailure(Call<MascotaResponse> call, Throwable t) {
+                Toast.makeText(context, "Error en la conexión al servidor, intente más tarde", Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
 }

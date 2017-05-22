@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 
 import mx.skylabs.petagram.restAPI.Constants;
 import mx.skylabs.petagram.restAPI.EndpointsApi;
+import mx.skylabs.petagram.restAPI.deserializador.FollowersDeserializador;
 import mx.skylabs.petagram.restAPI.deserializador.MascotaDeserializador;
 import mx.skylabs.petagram.restAPI.model.MascotaResponse;
 import retrofit2.Retrofit;
@@ -32,4 +33,11 @@ public class RestAPIAdapter {
         gsonBuilder.registerTypeAdapter(MascotaResponse.class, new MascotaDeserializador());
         return gsonBuilder.create();
     }
+
+    public Gson construyendoGsonDeserializadorParaFollowers() {
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(FollowersDeserializador.class, new FollowersDeserializador());
+        return gsonBuilder.create();
+    }
+
 }

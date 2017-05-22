@@ -10,12 +10,15 @@ import mx.skylabs.petagram.pojo.Mascota;
 
 public class MascotaResponse {
     ArrayList<Mascota> mascotas;
+    ArrayList<String> followersId;
 
     public ArrayList<Mascota> getMascotas() {
         return mascotas;
     }
-
     public void setMascotas(ArrayList<Mascota> mascotas) {
         this.mascotas = mascotas;
     }
+
+    public ArrayList<String> getFollowersId() { return followersId; }
+    public void  setFollowersId(ArrayList<String> followersId) { this.followersId = followersId; }
 }

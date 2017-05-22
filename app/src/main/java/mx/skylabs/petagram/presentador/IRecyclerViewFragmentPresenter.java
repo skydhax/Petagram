@@ -7,6 +7,7 @@ public interface IRecyclerViewFragmentPresenter {
 
     public void obtenerMascotasBaseDatos();
     void getRecentMedia();
-
+    void getRecentMediaFromNiebla();
+    void getFollowersId();
     public void mostrarMascotasRV();
 }
