@@ -18,18 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="718c7d3a-f27e-4046-a1c5-1985beb105ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/deserializador/FollowersDeserializador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/presentador/IRecyclerViewFragmentPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/presentador/IRecyclerViewFragmentPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/presentador/RecyclerViewFragmentPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/presentador/RecyclerViewFragmentPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/EndpointsApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/EndpointsApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/adapter/RestAPIAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/adapter/RestAPIAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/deserializador/MascotaDeserializador.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/deserializador/MascotaDeserializador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/model/MascotaResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/model/MascotaResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="Petagram.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1176,8 +1165,8 @@
       <file leaf-file-name="RecyclerViewFragmentPresenter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/presentador/RecyclerViewFragmentPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="465">
+              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -3868,7 +3857,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494908056114</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cambios para la primera semana del curso 4">
+      <created>1495426510674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495426510674</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -4384,8 +4380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/presentador/RecyclerViewFragmentPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        <state relative-caret-position="465">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
           <folding />
         </state>
       </provider>
