@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1036160180762",
+    "firebase_url": "https://petagram-135ab.firebaseio.com",
+    "project_id": "petagram-135ab",
+    "storage_bucket": "petagram-135ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036160180762:android:c13181ad4cfe7f49",
+        "android_client_info": {
+          "package_name": "mx.skylabs.petagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036160180762-aliqb5ltehvjed849nqo2ap5gakmpq38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.skylabs.petagram",
+            "certificate_hash": "d91c50cf7e57090c487a6e79e801c8447dc539a1"
+          }
+        },
+        {
+          "client_id": "1036160180762-nt4re7imb79olh5v9tdsb4bvcrj122oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN7UYWH4eYyp2PXnRKqx_f24s4Wt3l1vM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036160180762-nt4re7imb79olh5v9tdsb4bvcrj122oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,66 +3,57 @@
 
     <item
         is-multidex="true"
-        jar="/Users/sky/.android/build-cache/09720379ec63a20dbf97f25c8795b97fdf55fb5c/output/jars/libs/internal_impl-23.4.0.jar"
+        jar="/Users/sky/.android/build-cache/69a1ec6aa547c0ad55b3a8257e4d816cf21dcc03/output/jars/libs/internal_impl-24.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_ed53772395c0a20985b5bfce6e4f21724078f9fe/classes.dex" />
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_53b1eb92816c1c03fd65a5b455cca7bd5c1b79c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/855d0ad2935dac7a1832604914a17d040a488a4f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_1a9a0c7da7d4675f8c7f7baebf6c70d6b4495aa2.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jar="/Users/sky/.android/build-cache/855d0ad2935dac7a1832604914a17d040a488a4f/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_7e29ced7a91f46854091e6a3f758396839f13a71/classes.dex" />
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1a9a0c7da7d4675f8c7f7baebf6c70d6b4495aa2/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/69a1ec6aa547c0ad55b3a8257e4d816cf21dcc03/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_53b1eb92816c1c03fd65a5b455cca7bd5c1b79c1.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/sky/.android/build-cache/e85c1a21333e0b23e667573fdaac252e2ad9f8b5/output/jars/classes.jar"
+        jar="/Users/sky/.android/build-cache/65554312ef4524ac7b5593694a691ed01da2dfe6/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d0bf5e32a5a2545ba6f26f158b80ac30ec352827/classes.dex" />
+        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3473aea51ff722cecb61fc9031e4b6d1eef20a9a/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/sky/.android/build-cache/2e9e18177462175583b65fd482ad78660dcba0d6/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/65554312ef4524ac7b5593694a691ed01da2dfe6/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_23d2cdc85212d5f53828c711e750303c9b4875d4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.2.0/41e67dba73c3347e4503761642c39d0e06ca1f2/retrofit-2.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="041e67dba73c3347e4503761642c39d0e06ca1f2">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.2.0_3adcfcf9fbfa63c6c0f0a9edffa02e20a9a7b486/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3ee625d5c56b1d52f357564178d2004008918d65">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4d7b3449283cd5846818a0ec5f869cbaf4c18fe4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/.android/build-cache/09720379ec63a20dbf97f25c8795b97fdf55fb5c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f1dc7f179e3c33a83755a493001abf0d220ddd1f/classes.dex" />
+        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_3473aea51ff722cecb61fc9031e4b6d1eef20a9a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -75,84 +66,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jar="/Users/sky/.android/build-cache/fbf9e803ac3410519b29b4962ce2fd351e4a9a5c/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.11.0_bdadc51ff9ffcfe0532b758c961a77d2b6d7d76a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.sun.mail/android-mail/1.5.5/53a2f927b235acb565dbe9314ececfb7e6d43020/android-mail-1.5.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a2f927b235acb565dbe9314ececfb7e6d43020">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/android-mail-1.5.5_099ad8309b49f24b9b23e8d0d810245a37a2a86b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/.android/build-cache/08362531c6a2a12dfc3795ed823915490a1df57b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_44926f941a9560a7114b0b71ec869b118ae73003/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/.android/build-cache/37bb56b230abe2356e72d8722c96697c558f81b8/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1761ea9643dbc7955cfb51478adb4c63f6ed5770/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4f1ea99279eefb673afefbef787065fa59c888d8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_c8654483defe67d93075901df541ad640e0ea2f8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_f4e347a89609c823bf96933de9b0c29b240942fa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.2.0/a09926806199499a20b2f5168779499abfa33342/converter-gson-2.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a09926806199499a20b2f5168779499abfa33342">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.2.0_94e35c15f1d718281a5381f30f70d0baa28a4546/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.6.0_00afd4cca3ee845f0c5a294f65e0487e78f88bb3/classes.dex" />
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b255052568d0ae10a0e3ba116c47096ac843327c/classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -165,6 +84,114 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/sky/.android/build-cache/a99f6ee5e7080b63763a73bf51737a9c0e900c26/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_5164dad21e407cce7f55520b116daefd1dd1862e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/06292e56feaf284a6be5ce8ce1356d30722966f8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_ce2626cda0c3e0123bebb5d5472126126dbb82a0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sky/.android/build-cache/a99f6ee5e7080b63763a73bf51737a9c0e900c26/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5164dad21e407cce7f55520b116daefd1dd1862e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sky/.android/build-cache/06292e56feaf284a6be5ce8ce1356d30722966f8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ce2626cda0c3e0123bebb5d5472126126dbb82a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/7f0ab56defeb7556f962efa42347b28a768e74ad/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_944c5440b913d51ef50128ef887da73d23eb70f6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sky/.android/build-cache/7f0ab56defeb7556f962efa42347b28a768e74ad/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_944c5440b913d51ef50128ef887da73d23eb70f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/af6dc54029439763b5505df12957ee4a289460da/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_b9de41da8a02341dbf10969c4fd76c5978c1252c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/bfc8b8d682c1b72658b0e0dcc18ce3fb79469817/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_a42f082758087abff5d9cdfd287a8f22a819aa40.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sky/.android/build-cache/bfc8b8d682c1b72658b0e0dcc18ce3fb79469817/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a42f082758087abff5d9cdfd287a8f22a819aa40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="13222cff44c4ba03de13a1afd5c5c3af794018a8">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4d7b3449283cd5846818a0ec5f869cbaf4c18fe4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4f1ea99279eefb673afefbef787065fa59c888d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/fbf9e803ac3410519b29b4962ce2fd351e4a9a5c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_b255052568d0ae10a0e3ba116c47096ac843327c.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
         jumboMode="false"
         optimize="true"
@@ -173,31 +200,49 @@
         <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_c8654483defe67d93075901df541ad640e0ea2f8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/sky/.android/build-cache/9f3cbe4e6ad85e1bc99ec60ced4886e64addd2ca/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/sky/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_141c097e6cfb4088e286f775d52e4db48f5468bb/classes.dex" />
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_00d7853514efdb1af020c8ba621429e498814a85.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/sky/.gradle/caches/modules-2/files-2.1/com.sun.mail/android-activation/1.5.5/5442d5e05808145434b750c9f8a0c3f537383c5a/android-activation-1.5.5.jar"
+        jar="/Users/sky/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="5442d5e05808145434b750c9f8a0c3f537383c5a">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/android-activation-1.5.5_cf7b4abfc67c5cfe73edc4d01e5346da8cefae20/classes.dex" />
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_00d7853514efdb1af020c8ba621429e498814a85/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/sky/.android/build-cache/3676bbc9e8d0185e6e95a68157a38e732edf27a4/output/jars/classes.jar"
+        jar="/Users/sky/.android/build-cache/69a1ec6aa547c0ad55b3a8257e4d816cf21dcc03/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9e4ae3dcd8ec31b9638f09a3bdd0b2eef4aac9b/classes.dex" />
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_64f4d06ca840843ad92fabb28791ea9264f02eb8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sky/.android/build-cache/af6dc54029439763b5505df12957ee4a289460da/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b9de41da8a02341dbf10969c4fd76c5978c1252c/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sky/.android/build-cache/69a1ec6aa547c0ad55b3a8257e4d816cf21dcc03/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/sky/Documents/Coursera/Android/Petagram/app/build/intermediates/pre-dexed/debug/classes_64f4d06ca840843ad92fabb28791ea9264f02eb8.jar" />
     </item>
 
 </items>

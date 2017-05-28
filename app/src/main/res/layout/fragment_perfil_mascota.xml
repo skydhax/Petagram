@@ -2,24 +2,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.PerfilMascotaFragment">
 
+    <!--
     <include android:id="@+id/miActionBar"
         layout="@layout/actionbar"/>
+    -->
 
-    <ImageView
+
+    <LinearLayout
+        android:id="@+id/ll1"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/miActionBar"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/tiger1" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/tiger1"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#1AA1E7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Nombre"
+            android:id="@+id/tvNombre"
+            />
+
+    </LinearLayout>
+
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvFotosMascota"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_below="@id/imageView">
+        android:layout_below="@id/ll1">
     </android.support.v7.widget.RecyclerView>
 
 

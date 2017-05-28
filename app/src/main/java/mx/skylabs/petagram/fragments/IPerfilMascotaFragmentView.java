@@ -5,12 +5,11 @@ import mx.skylabs.petagram.adapters.MascotaAdaptador;
 import mx.skylabs.petagram.pojo.Mascota;
 
 /**
- * Created by sky on 08/06/16.
+ * Created by sky on 27/05/17.
  */
-public interface IRecyclerViewFragmentView {
 
+public interface IPerfilMascotaFragmentView {
 
-    public void generarLinearLayoutVertical();
     public void generarGridLayout();
     public MascotaAdaptador crearAdaptador(ArrayList<Mascota> mascotas);
     public void inicializarAdaptadorRV(MascotaAdaptador adaptador);

@@ -1,15 +1,21 @@
 package mx.skylabs.petagram;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.google.firebase.messaging.FirebaseMessagingService;
+import com.google.firebase.messaging.RemoteMessage;
 
 import java.util.ArrayList;
 
@@ -74,33 +80,19 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.mContact:
                 Toast.makeText(this, "Contacto", Toast.LENGTH_SHORT).show();
-
                 Intent intentContacto = new Intent(this,Contacto.class);
                 startActivity(intentContacto);
-
                 break;
 
             case R.id.mFavorites:
                 Toast.makeText(this, "Favorites", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, ListadoMascotas.class);
+                Intent intentFavoritos = new Intent(this, ListadoMascotas.class);
+                startActivity(intentFavoritos);
+                break;
 
-
-                /*
-                int noMascotas = 0;
-                for(int i = 0; i< 5; i++){
-                    if(mascotas.get(i).getRanking() == 5){
-                        intent.putExtra("Mascota" + noMascotas,mascotas.get(i).getNombre()); //String
-                        intent.putExtra("Foto" + noMascotas,mascotas.get(i).getFoto()); //Int
-                        noMascotas++;
-                    }
-                }
-                intent.putExtra("noMascotas",noMascotas);
-                */
-
-
-
-
-                startActivity(intent);
+            case R.id.mCuenta:
+                Intent intentCuenta = new Intent(this, ConfigurarCuenta.class);
+                startActivity(intentCuenta);
                 break;
         }
 
@@ -111,7 +103,13 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Fragment> fragments = new ArrayList<>();
 
         fragments.add(new RecyclerViewFragment());
-        fragments.add(new PerfilMascotaFragment());
+
+        SharedPreferences prefs = getSharedPreferences("USUARIO_ACTUAL", MODE_PRIVATE);
+        String userId = prefs.getString("id", "5472428849");
+        String foto_url = prefs.getString("photo_url", null);
+        String nombre = prefs.getString("nombre", "");
+
+        fragments.add(new PerfilMascotaFragment(userId, nombre, foto_url));
 
         return fragments;
     }
@@ -182,4 +180,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     */
+
+
 }

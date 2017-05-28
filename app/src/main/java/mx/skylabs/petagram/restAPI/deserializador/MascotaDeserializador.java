@@ -29,17 +29,15 @@ public class MascotaDeserializador implements JsonDeserializer<MascotaResponse> 
         JsonObject jsonObject = json.getAsJsonObject(); //metaJsonObject
         JsonObject metaJsonObject = jsonObject.getAsJsonObject("meta");
         int meta_code = metaJsonObject.get("code").getAsInt();
+        MascotaResponse mascotaResponse = gson.fromJson(json, MascotaResponse.class);
+        JsonArray mascotaResponseData = json.getAsJsonObject().getAsJsonArray("data");
+        mascotaResponse.setMascotas(deserializarContactoDeJson(mascotaResponseData));
+        return mascotaResponse;
+        /*
         if (meta_code == 200) {
             // 200 es un codigo válido que contiene respuestas válidas
-            MascotaResponse mascotaResponse = gson.fromJson(json, MascotaResponse.class);
-            JsonArray mascotaResponseData = json.getAsJsonObject().getAsJsonArray("data");
-            mascotaResponse.setMascotas(deserializarContactoDeJson(mascotaResponseData));
-            return mascotaResponse;
-        } else {
-            // los demás no nos sirven
-            return null;
-        }
 
+        }*/
     }
 
     private ArrayList<Mascota> deserializarContactoDeJson(JsonArray mascotaResponseData) {

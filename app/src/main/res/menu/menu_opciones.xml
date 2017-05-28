@@ -3,6 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <item
+        android:id="@+id/mFavorites"
+        android:title="@string/mFavorites"
+        android:orderInCategory="102"
+        app:showAsAction="always"
+        android:icon="@drawable/stars"></item>
+
     <item
         android:id="@+id/mAbout"
         android:title="@string/mAbout"
@@ -14,10 +22,8 @@
         android:orderInCategory="101"></item>
 
     <item
-        android:id="@+id/mFavorites"
-        android:title="@string/mFavorites"
-        android:orderInCategory="102"
-        app:showAsAction="always"
-        android:icon="@drawable/stars"></item>
+        android:id="@+id/mCuenta"
+        android:title="Configurar Cuenta"
+        android:orderInCategory="103"></item>
 
 </menu>
