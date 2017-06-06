@@ -259,7 +259,7 @@ public class RecyclerViewFragmentPresenter implements IRecyclerViewFragmentPrese
 
     }
 
-
+    /*
     private void registrarToken() {
         String token = FirebaseInstanceId.getInstance().getToken();
 
@@ -282,5 +282,6 @@ public class RecyclerViewFragmentPresenter implements IRecyclerViewFragmentPrese
         });
 
     }
+        */
 
 }

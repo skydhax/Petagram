@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.gson.Gson;
 
 import mx.skylabs.petagram.pojo.Mascota;
@@ -17,6 +18,7 @@ import mx.skylabs.petagram.restAPI.Constants;
 import mx.skylabs.petagram.restAPI.EndpointsApi;
 import mx.skylabs.petagram.restAPI.adapter.RestAPIAdapter;
 import mx.skylabs.petagram.restAPI.model.MascotaResponse;
+import mx.skylabs.petagram.restAPI.model.UsuarioResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -67,13 +69,35 @@ public class ConfigurarCuenta extends AppCompatActivity {
                 editor.putString("photo_url", m.getPhotoUrl());
                 editor.apply();
 
-                finish();
 
+                String token = FirebaseInstanceId.getInstance().getToken();
 
+                registrarUsuario(token,m.getId());
             }
 
             @Override
             public void onFailure(Call<MascotaResponse> call, Throwable t) {
+
+            }
+        });
+    }
+
+
+    public void registrarUsuario(String idDipositivo, String idUsuarioInstagram) {
+        RestAPIAdapter restAPIAdapter = new RestAPIAdapter();
+        EndpointsApi endpointsApi = restAPIAdapter.establecerConexionRestApiPetagram();
+        Call<UsuarioResponse> usuarioResponseCall = endpointsApi.registrarUsuario(idDipositivo,idUsuarioInstagram);
+        usuarioResponseCall.enqueue(new Callback<UsuarioResponse>() {
+            @Override
+            public void onResponse(Call<UsuarioResponse> call, Response<UsuarioResponse> response) {
+                UsuarioResponse usuarioResponse = response.body();
+                Log.d("TOKEN",usuarioResponse.getIdDispositivo());
+                Log.d("ID_INSTAGRAM",usuarioResponse.getIdUsuarioInstagram());
+                finish();
+            }
+
+            @Override
+            public void onFailure(Call<UsuarioResponse> call, Throwable t) {
 
             }
         });

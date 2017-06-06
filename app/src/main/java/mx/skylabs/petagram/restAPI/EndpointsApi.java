@@ -43,7 +43,7 @@ public interface EndpointsApi {
     */
 
     @FormUrlEncoded
-    @POST(Constants.NOTIFICATIONS_POST_TOKEN)
-    Call<UsuarioResponse> registrarTokenId(@Field("token") String token);
+    @POST(Constants.NOTIFICATIONS_POST_REGISTER)
+    Call<UsuarioResponse> registrarUsuario(@Field("id_dispositivo") String idDispositivo, @Field("id_usuario_instagram") String idUsuarioInstagram);
 
 }

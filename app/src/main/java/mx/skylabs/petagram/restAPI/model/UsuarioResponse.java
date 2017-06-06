@@ -6,30 +6,30 @@ package mx.skylabs.petagram.restAPI.model;
 
 public class UsuarioResponse {
 
-    private String id;
-    private String token;
+    private String idDispositivo;
+    private String idUsuarioInstagram;
 
     public UsuarioResponse() {
     }
 
-    public UsuarioResponse(String id, String token) {
-        this.id = id;
-        this.token = token;
+    public UsuarioResponse(String idDispositivo, String idUsuarioInstagram) {
+        this.idDispositivo = idDispositivo;
+        this.idUsuarioInstagram = idUsuarioInstagram;
     }
 
-    public String getId() {
-        return id;
+    public String getIdDispositivo() {
+        return idDispositivo;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setIdDispositivo(String idDispositivo) {
+        this.idDispositivo = idDispositivo;
     }
 
-    public String getToken() {
-        return token;
+    public String getIdUsuarioInstagram() {
+        return idUsuarioInstagram;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setIdUsuarioInstagram(String idUsuarioInstagram) {
+        this.idUsuarioInstagram = idUsuarioInstagram;
     }
 }

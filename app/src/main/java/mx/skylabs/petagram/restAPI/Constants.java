@@ -37,6 +37,7 @@ public final class Constants {
 
 
     public static final String NOTIFICATIONS_BASE_URL = "https://aqueous-earth-21662.herokuapp.com/";
-    public static final String NOTIFICATIONS_POST_TOKEN = "device-token";
+    public static final String NOTIFICATIONS_POST_TOKEN = "device-token/";
+    public static final String NOTIFICATIONS_POST_REGISTER = "registrar-usuario/";
 
 }
