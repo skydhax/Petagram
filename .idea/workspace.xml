@@ -19,12 +19,6 @@
   <component name="ChangeListManager">
     <list default="true" id="718c7d3a-f27e-4046-a1c5-1985beb105ca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/ConfigurarCuenta.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/ConfigurarCuenta.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/presentador/RecyclerViewFragmentPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/presentador/RecyclerViewFragmentPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/EndpointsApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/EndpointsApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/model/UsuarioResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/mx/skylabs/petagram/restAPI/model/UsuarioResponse.java" />
     </list>
     <ignored path="Petagram.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -3871,7 +3865,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495940796693</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Se ha agregado la conexión al web service para registrar el device token y el id de usuario de instagram.&#10;Falta configurar el &quot;profile&quot; del usuario elegido después de introducir sus datos en &quot;configurar cuenta&quot;">
+      <created>1496724487299</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496724487299</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3936,7 +3937,8 @@
     <MESSAGE value="Petagram V2" />
     <MESSAGE value="Cambios para la primera semana del curso 4" />
     <MESSAGE value="Se han completado totalmente las tareas de la semana 1, curso 4. Trabajando en las notificaiones push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se han completado totalmente las tareas de la semana 1, curso 4. Trabajando en las notificaiones push" />
+    <MESSAGE value="Se ha agregado la conexión al web service para registrar el device token y el id de usuario de instagram.&#10;Falta configurar el &quot;profile&quot; del usuario elegido después de introducir sus datos en &quot;configurar cuenta&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se ha agregado la conexión al web service para registrar el device token y el id de usuario de instagram.&#10;Falta configurar el &quot;profile&quot; del usuario elegido después de introducir sus datos en &quot;configurar cuenta&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
