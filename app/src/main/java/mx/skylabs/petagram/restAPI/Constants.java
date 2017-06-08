@@ -35,9 +35,12 @@ public final class Constants {
     public static final String GET_SEARCH_USER = USERS + "search";
 
 
+    public static final String MEDIA = "media/";
+
 
     public static final String NOTIFICATIONS_BASE_URL = "https://aqueous-earth-21662.herokuapp.com/";
     public static final String NOTIFICATIONS_POST_TOKEN = "device-token/";
     public static final String NOTIFICATIONS_POST_REGISTER = "registrar-usuario/";
+    public static final String DAR_LIKE = "dar-like/";
 
 }

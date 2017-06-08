@@ -9,6 +9,7 @@ public class Mascota {
     private String full_name;
     private String photo_url;
     private int ranking;
+    private String media_id;
 
 
     public Mascota(String id, String full_name, String photo_url,  int ranking, int foto){
@@ -52,5 +53,13 @@ public class Mascota {
 
     public void setRanking(int ranking) {
         this.ranking = ranking;
+    }
+
+    public String getMediaId() {
+        return media_id;
+    }
+
+    public void setMediaId(String media_id) {
+        this.media_id = media_id;
     }
 }

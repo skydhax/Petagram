@@ -13,6 +13,7 @@ import mx.skylabs.petagram.db.ConstructorMascotas;
 import mx.skylabs.petagram.fragments.IRecyclerViewFragmentView;
 import mx.skylabs.petagram.fragments.RecyclerViewFragment;
 import mx.skylabs.petagram.pojo.Mascota;
+import mx.skylabs.petagram.restAPI.Constants;
 import mx.skylabs.petagram.restAPI.EndpointsApi;
 import mx.skylabs.petagram.restAPI.adapter.RestAPIAdapter;
 import mx.skylabs.petagram.restAPI.model.MascotaResponse;
@@ -134,6 +135,8 @@ public class RecyclerViewFragmentPresenter implements IRecyclerViewFragmentPrese
     }
 
 
+
+
     /*
     * @Override
     public void getTimeline(){
@@ -241,6 +244,7 @@ public class RecyclerViewFragmentPresenter implements IRecyclerViewFragmentPrese
                     for (Mascota mas:m) {
                         Log.e("MASCOTA",mas.getFullName());
                         Log.e("MASCOTA",mas.getPhotoUrl());
+                        Log.e("MASCOTA",mas.getMediaId());
                         mascotas.add(mas);
                     }
                     if (mascotas.size() > 0) {

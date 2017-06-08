@@ -3,6 +3,7 @@ package mx.skylabs.petagram.adapters;
 import android.app.Activity;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -18,6 +20,14 @@ import java.util.ArrayList;
 import mx.skylabs.petagram.db.ConstructorMascotas;
 import mx.skylabs.petagram.pojo.Mascota;
 import mx.skylabs.petagram.R;
+import mx.skylabs.petagram.restAPI.Constants;
+import mx.skylabs.petagram.restAPI.EndpointsApi;
+import mx.skylabs.petagram.restAPI.adapter.RestAPIAdapter;
+import mx.skylabs.petagram.restAPI.model.LikeResponse;
+import mx.skylabs.petagram.restAPI.model.MascotaResponse;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.MascotaViewHolder>{
@@ -55,23 +65,39 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         // Deshechado
 
         //mascotaViewHolder.tvRankingCardView.setText( String.valueOf(mascota.getRanking()) );
-        /*
-        mascotaViewHolder.btnRanking.setOnClickListener(new View.OnClickListener(){
+
+        mascotaViewHolder.imgRankingActual.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view){
-                Toast.makeText(activity, mascota.getNombre(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(activity, mascota.getNombre(), Toast.LENGTH_SHORT).show();
+                String media_id = mascota.getMediaId();
+
+
+                RestAPIAdapter restAPIAdapter = new RestAPIAdapter();
+                Gson gsonLike = restAPIAdapter.construyendoGsonDeserializadorParaLike();
+                EndpointsApi endpointsApi = restAPIAdapter.establecerConexionRestApiInstagram(gsonLike);
+                Call<LikeResponse> likeResponseCall = endpointsApi.darLike(media_id, Constants.ACCESS_TOKEN);
+                likeResponseCall.enqueue(new Callback<LikeResponse>() {
+                        @Override
+                    public void onResponse(Call<LikeResponse> call, Response<LikeResponse> response) {
+                        Log.e("LIKE","SE HA DADO LIKE");
+                    }
+
+                    @Override
+                    public void onFailure(Call<LikeResponse> call, Throwable t) {
+                        //Toast.makeText(context, "Error en la conexión al servidor, intente más tarde", Toast.LENGTH_LONG).show();
+                    }
+
+
+                });
                 //mascota.setRanking(5);
-
-                ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity); // la activity representa nuestro contexto
-                constructorMascotas.ponerRankingMascota(mascota);
-
-                mascotaViewHolder.tvRanking.setText(String.valueOf(constructorMascotas.obtenerRankingMascota(mascota)));
-
-
+                //ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity); // la activity representa nuestro contexto
+                //constructorMascotas.ponerRankingMascota(mascota);
+                //mascotaViewHolder.tvRanking.setText(String.valueOf(constructorMascotas.obtenerRankingMascota(mascota)));
             }
         });
-        */
+
     }
 
     @Override

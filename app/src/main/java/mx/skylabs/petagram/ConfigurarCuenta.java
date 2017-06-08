@@ -46,7 +46,6 @@ public class ConfigurarCuenta extends AppCompatActivity {
 
 
     public void configurarCuenta(View view){
-
         buscarUsuario(etUsuario.getText().toString());
     }
 
@@ -94,6 +93,7 @@ public class ConfigurarCuenta extends AppCompatActivity {
                 Log.d("TOKEN",usuarioResponse.getIdDispositivo());
                 Log.d("ID_INSTAGRAM",usuarioResponse.getIdUsuarioInstagram());
                 finish();
+                onRestart();
             }
 
             @Override

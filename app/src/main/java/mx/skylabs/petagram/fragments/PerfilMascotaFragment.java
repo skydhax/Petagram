@@ -58,13 +58,7 @@ public class PerfilMascotaFragment extends Fragment implements IPerfilMascotaFra
         imageView = (ImageView)view.findViewById(R.id.imageView);
 
 
-        tvNombre.setText(nombre);
-        if (foto_url != null) {
-            Picasso.with(getActivity())
-                    .load(foto_url)
-                    .placeholder(R.drawable.tiger1)
-                    .into(imageView);
-        }
+
 
         presenter = new PerfilRecyclerViewFragmentPresenter(this, getContext(),userId);
 
@@ -74,6 +68,18 @@ public class PerfilMascotaFragment extends Fragment implements IPerfilMascotaFra
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        
+        tvNombre.setText(nombre);
+        if (foto_url != null) {
+            Picasso.with(getActivity())
+                    .load(foto_url)
+                    .placeholder(R.drawable.tiger1)
+                    .into(imageView);
+        }
+    }
 
     @Override
     public void generarGridLayout() {

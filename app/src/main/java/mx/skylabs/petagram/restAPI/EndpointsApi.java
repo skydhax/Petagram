@@ -1,5 +1,6 @@
 package mx.skylabs.petagram.restAPI;
 
+import mx.skylabs.petagram.restAPI.model.LikeResponse;
 import mx.skylabs.petagram.restAPI.model.MascotaResponse;
 import mx.skylabs.petagram.restAPI.model.UsuarioResponse;
 import retrofit2.Call;
@@ -43,7 +44,30 @@ public interface EndpointsApi {
     */
 
     @FormUrlEncoded
+    @POST(Constants.MEDIA + "{media_id}/likes")
+    Call<LikeResponse> darLike(@Path("media_id") String media_id, @Field("access_token") String access_token);
+
+
+    @FormUrlEncoded
     @POST(Constants.NOTIFICATIONS_POST_REGISTER)
     Call<UsuarioResponse> registrarUsuario(@Field("id_dispositivo") String idDispositivo, @Field("id_usuario_instagram") String idUsuarioInstagram);
+
+
+
+    /*
+id_foto_instagram
+id_usuario_instagram
+id_dispositivo
+*/
+
+    @FormUrlEncoded
+    @POST(Constants.DAR_LIKE)
+    Call<UsuarioResponse> darLikePetagram(@Field("id_foto_instagram") String idFotoInstagram,
+                                          @Field("id_usuario_instagram") String idUsuarioInstagram,
+                                          @Field("id_dispositivo") String idDispositivo);
+
+
+
+
 
 }
