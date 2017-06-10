@@ -35,7 +35,6 @@ public class NotificationService extends FirebaseMessagingService {
                 .setSound(sonido)
                 .setContentIntent(pendingIntent);
 
-        // revisar si en vez de esta no era la app compat v4
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(0,builder.build());
 

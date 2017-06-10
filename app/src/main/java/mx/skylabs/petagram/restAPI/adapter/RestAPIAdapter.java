@@ -10,8 +10,10 @@ import mx.skylabs.petagram.restAPI.deserializador.FollowersDeserializador;
 import mx.skylabs.petagram.restAPI.deserializador.LikeDeserializador;
 import mx.skylabs.petagram.restAPI.deserializador.MascotaDeserializador;
 import mx.skylabs.petagram.restAPI.deserializador.PerfilDeserializador;
+import mx.skylabs.petagram.restAPI.deserializador.TokenDeserializador;
 import mx.skylabs.petagram.restAPI.model.LikeResponse;
 import mx.skylabs.petagram.restAPI.model.MascotaResponse;
+import mx.skylabs.petagram.restAPI.model.UsuarioResponse;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -68,6 +70,12 @@ public class RestAPIAdapter {
         return retrofit.create(EndpointsApi.class);
     }
 
+
+    public Gson construyendoGsonDeserializadorParaTokenPetagram() {
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(UsuarioResponse.class,new TokenDeserializador());
+        return gsonBuilder.create();
+    }
 
 
 }

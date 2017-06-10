@@ -25,6 +25,7 @@ import mx.skylabs.petagram.restAPI.EndpointsApi;
 import mx.skylabs.petagram.restAPI.adapter.RestAPIAdapter;
 import mx.skylabs.petagram.restAPI.model.LikeResponse;
 import mx.skylabs.petagram.restAPI.model.MascotaResponse;
+import mx.skylabs.petagram.restAPI.model.UsuarioResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -82,6 +83,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                         @Override
                     public void onResponse(Call<LikeResponse> call, Response<LikeResponse> response) {
                         Log.e("LIKE","SE HA DADO LIKE");
+                        enviarNotificacion();
                     }
 
                     @Override
@@ -95,6 +97,25 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                 //ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity); // la activity representa nuestro contexto
                 //constructorMascotas.ponerRankingMascota(mascota);
                 //mascotaViewHolder.tvRanking.setText(String.valueOf(constructorMascotas.obtenerRankingMascota(mascota)));
+            }
+
+            private void enviarNotificacion() {
+                RestAPIAdapter restAPIAdapter = new RestAPIAdapter();
+                Gson gson = restAPIAdapter.construyendoGsonDeserializadorParaTokenPetagram();
+                EndpointsApi endpointsApi = restAPIAdapter.establecerConexionRestApiPetagram();
+                Call<UsuarioResponse> usuarioResponseCall = endpointsApi.darLikePetagram("10","5","daniel");
+                usuarioResponseCall.enqueue(new Callback<UsuarioResponse>() {
+                    @Override
+                    public void onResponse(Call<UsuarioResponse> call, Response<UsuarioResponse> response) {
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<UsuarioResponse> call, Throwable t) {
+
+                    }
+                });
+
             }
         });
 

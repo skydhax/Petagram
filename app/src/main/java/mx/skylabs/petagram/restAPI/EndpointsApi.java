@@ -62,9 +62,9 @@ id_dispositivo
 
     @FormUrlEncoded
     @POST(Constants.DAR_LIKE)
-    Call<UsuarioResponse> darLikePetagram(@Field("id_foto_instagram") String idFotoInstagram,
-                                          @Field("id_usuario_instagram") String idUsuarioInstagram,
-                                          @Field("id_dispositivo") String idDispositivo);
+    Call<UsuarioResponse> darLikePetagram(@Field("idFotoInstagram") String idFotoInstagram,
+                                          @Field("idUsuarioInstagram") String idUsuarioInstagram,
+                                          @Field("idDispositivo") String idDispositivo);
 
 
 
