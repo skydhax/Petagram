@@ -34,8 +34,8 @@ public final class Constants {
     public static final String PLUS_ACCESS_TOKEN = "&access_token=" + ACCESS_TOKEN;
     public static final String GET_SEARCH_USER = USERS + "search";
 
-
     public static final String MEDIA = "media/";
+    public static final String FOLLOW = "users/{user_id}/relationship/";
 
 
     public static final String NOTIFICATIONS_BASE_URL = "https://aqueous-earth-21662.herokuapp.com/";

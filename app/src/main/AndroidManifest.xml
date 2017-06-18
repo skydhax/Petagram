@@ -38,6 +38,12 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
+        <receiver android:name=".DevuelveLike">
+            <intent-filter>
+                <action android:name="LIKE"/>
+                <action android:name="UNFOLLOW"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
