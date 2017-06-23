@@ -26,4 +26,9 @@
         android:title="Configurar Cuenta"
         android:orderInCategory="103"></item>
 
+    <item
+        android:id="@+id/mNotificaciones"
+        android:title="Recibir Notificaciones"
+        android:orderInCategory="103"></item>
+
 </menu>

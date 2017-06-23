@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -47,6 +48,7 @@ public class DevuelveLike extends BroadcastReceiver {
 
     }
 
+
     private void enviarNotificacion() {
         RestAPIAdapter restAPIAdapter = new RestAPIAdapter();
         Gson gson = restAPIAdapter.construyendoGsonDeserializadorParaTokenPetagram();
@@ -77,11 +79,11 @@ public class DevuelveLike extends BroadcastReceiver {
         RestAPIAdapter restAPIAdapter = new RestAPIAdapter();
         Gson gson = restAPIAdapter.construyendoGsonDeserializadorParaLike();
         EndpointsApi endpointsApi = restAPIAdapter.establecerConexionRestApiInstagram(gson);
-        Call<LikeResponse> likeResponseCall = endpointsApi.follow("5472428849", Constants.ACCESS_TOKEN, "unfollow");
+        Call<LikeResponse> likeResponseCall = endpointsApi.follow("5472428849", Constants.ACCESS_TOKEN, "follow");
         likeResponseCall.enqueue(new Callback<LikeResponse>() {
             @Override
             public void onResponse(Call<LikeResponse> call, Response<LikeResponse> response) {
-
+                Log.e("FOLLOW","SE HA EJECUTADO FOLLOW");
             }
 
             @Override

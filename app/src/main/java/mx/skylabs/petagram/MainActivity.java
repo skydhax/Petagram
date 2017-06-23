@@ -94,6 +94,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentCuenta = new Intent(this, ConfigurarCuenta.class);
                 startActivity(intentCuenta);
                 break;
+
+            case R.id.mNotificaciones:
+                Intent intentNotificaciones = new Intent(this, RecibirNotificaciones.class);
+                startActivity(intentNotificaciones);
+                break;
         }
 
         return super.onOptionsItemSelected(item);

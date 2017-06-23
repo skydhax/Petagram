@@ -27,7 +27,7 @@ public class NotificationService extends FirebaseMessagingService {
 
 
     public static final String TAG = "FIREBASE";
-    public static final int NOTIFICATION_ID = 1;
+    public static final int NOTIFICATION_ID = 001;
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
@@ -37,6 +37,7 @@ public class NotificationService extends FirebaseMessagingService {
         Intent i = new Intent();
         i.setAction("LIKE");
         i.setAction("UNFOLLOW");
+        i.setAction("OPEN_MY_PROFILE");
 
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this,0,i,PendingIntent.FLAG_UPDATE_CURRENT);
         Uri sonido = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
@@ -44,6 +45,8 @@ public class NotificationService extends FirebaseMessagingService {
 
         NotificationCompat.Action action = new NotificationCompat.Action.Builder(R.drawable.paw, "Te han dado Like", pendingIntent).build();
         NotificationCompat.Action actionUnfollow = new NotificationCompat.Action.Builder(R.drawable.paw, "Te han dejado de seguir", pendingIntent).build();
+        NotificationCompat.Action actionOpenMyProfile = new NotificationCompat.Action.Builder(R.drawable.paw, "Abriendo mi perfil", pendingIntent).build();
+
 
         NotificationCompat.WearableExtender wearableExtender =
                 new NotificationCompat.WearableExtender()
@@ -61,6 +64,7 @@ public class NotificationService extends FirebaseMessagingService {
                 //.addAction(R.drawable.paw, "Te han dado Like",pendingIntent)
                 .extend(wearableExtender.addAction(action))
                 .extend(wearableExtender.addAction(actionUnfollow))
+                //.extend(wearableExtender.addAction(actionOpenMyProfile))
                 .setContentIntent(pendingIntent);
 
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);

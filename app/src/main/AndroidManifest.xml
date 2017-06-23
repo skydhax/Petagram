@@ -27,6 +27,7 @@
         <activity android:name=".Contacto" />
         <activity android:name=".About"></activity>
         <activity android:name=".ConfigurarCuenta"></activity>
+        <activity android:name=".RecibirNotificaciones"></activity>
 
         <service android:name=".NotificationService">
             <intent-filter>
@@ -38,9 +39,11 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
+
+
+
         <receiver android:name=".DevuelveLike">
             <intent-filter>
-                <action android:name="LIKE"/>
                 <action android:name="UNFOLLOW"/>
             </intent-filter>
         </receiver>
